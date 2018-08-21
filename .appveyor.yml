@@ -1,5 +1,6 @@
 image: ubuntu
 
 build_script:
+- ./install.on.ubuntu.sh
 - ./check.packages.sh
 - ./make.pc_x86_64_bios_defconfig.sh
