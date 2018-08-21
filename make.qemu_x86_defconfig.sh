@@ -1,0 +1,2 @@
+make qemu_x86_defconfig
+make
