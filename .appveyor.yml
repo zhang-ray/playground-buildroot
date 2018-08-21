@@ -1,0 +1,5 @@
+image: ubuntu
+
+build_script:
+- ./check.packages.sh
+- ./make.pc_x86_64_bios_defconfig.sh
