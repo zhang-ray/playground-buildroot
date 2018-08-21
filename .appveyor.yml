@@ -7,4 +7,4 @@ build_script:
 - tar -zxf buildroot-2018.02.4.tar.gz
 - cd buildroot-2018.02.4
 #- ../make.pc_x86_64_bios_defconfig.sh
-- ../make.qemu_x86.sh
+- ../make.qemu_x86_defconfig.sh
