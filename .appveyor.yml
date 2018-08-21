@@ -3,4 +3,7 @@ image: ubuntu
 build_script:
 - ./install.on.ubuntu.sh
 - ./check.packages.sh
-- ./make.pc_x86_64_bios_defconfig.sh
+- curl -O https://buildroot.org/downloads/buildroot-2018.02.4.tar.gz
+- tar -zxf buildroot-2018.02.4.tar.gz
+- cd buildroot-2018.02.4
+- ../make.pc_x86_64_bios_defconfig.sh
