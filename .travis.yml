@@ -1,0 +1,12 @@
+language: cpp
+compiler: gcc
+
+install: ./install.on.ubuntu.sh
+before_script: ./check.packages.sh
+
+script:
+- curl -O https://buildroot.org/downloads/buildroot-2018.02.4.tar.gz
+- tar -zxf buildroot-2018.02.4.tar.gz
+- cd buildroot-2018.02.4
+- ../make.qemu_x86_defconfig.sh
+- ls -lh output/images/
