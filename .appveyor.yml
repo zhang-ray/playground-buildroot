@@ -6,7 +6,7 @@ build_script:
 - curl -O https://buildroot.org/downloads/buildroot-2018.02.4.tar.gz
 - tar -zxf buildroot-2018.02.4.tar.gz
 - cd buildroot-2018.02.4
-- ../make.qemu_x86_defconfig.sh
+- ../make.raspberrypi2_defconfig.sh
 - ls -lh output/images/
 
 
